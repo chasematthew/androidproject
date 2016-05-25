@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#4cc4ff"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.chaseswanstrom.sentiment.battleActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="T w i t M a s h"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:id="@+id/TextViewQuery"
+    android:textSize="35dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+
+
+<Button
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="Battle!"
+    android:background="#4cc4ff"
+    android:textColor="#FFFFFF"
+    android:id="@+id/buttonSentiment"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="30dp"
+    android:textAlignment="center"
+    android:textColor="#FFFFFF"
+    android:padding="0dp"
+    android:id="@+id/textViewScore"
+    android:layout_below="@+id/buttonSentiment"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="35dp" />
+
+<EditText
+    android:layout_width="150dp"
+    android:layout_height="30dp"
+    android:id="@+id/editTextQueryWord"
+    android:hint="#First Word"
+    android:background="#99f2f3"
+    android:textAlignment="center"
+    android:layout_marginTop="49dp"
+    android:layout_below="@+id/TextViewQuery"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<EditText
+    android:layout_width="150dp"
+    android:layout_height="30dp"
+    android:id="@+id/editTextQueryWord2"
+    android:hint="#Second Word"
+    android:background="#99f2f3"
+    android:textAlignment="center"
+    android:layout_alignTop="@+id/editTextQueryWord"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<ImageView
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/imgSpinner"
+    android:visibility="visible"
+    android:contentDescription="loadingSpinner"
+    android:src="@drawable/twitmashlogo"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="RESULTS!"
+    android:textColor="#FFFFFF"
+    android:background="#4cc4ff"
+    android:id="@+id/buttonResults"
+    android:layout_below="@+id/textViewScore"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Single Mode"
+        android:background="#4cc4ff"
+        android:textColor="#FFFFFF"
+        android:id="@+id/sentimentButtonMode"
+        android:layout_below="@+id/textViewScore"
+        android:layout_alignLeft="@+id/buttonSentiment"
+        android:layout_alignStart="@+id/buttonSentiment" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Retry?"
+        android:background="#4cc4ff"
+        android:textColor="#FFFFFF"
+        android:id="@+id/retryButton"
+        android:layout_above="@+id/buttonSentiment"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
